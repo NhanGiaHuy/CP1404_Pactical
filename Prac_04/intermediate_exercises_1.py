@@ -1,8 +1,13 @@
 NUMBER = []
 
 def main():
-    for position in range(5):
-        number = int(input("Enter Number"))
+    count = 1
+    number = int(input("Enter Number" + str(count)))
+    NUMBER.append(number)
+
+    while number > 0:
+        count += 1
+        number = int(input("Enter Number" + str(count)))
         NUMBER.append(number)
 
     print("the first number is: " + str(NUMBER[0]))
